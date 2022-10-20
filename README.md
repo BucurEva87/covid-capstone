@@ -1,4 +1,5 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e6412c78-4e7b-4ed1-8194-45605f6b6dfe/deploy-status)](https://app.netlify.com/sites/covid-capstone/deploys)
 
 # Covid Capstone
 
@@ -14,9 +15,9 @@
 - NPM
 - Node
 
-<!-- ## Live Demo (if available) -->
+## Live Demo
 
-<!-- [Live Demo Link](https://livedemo.com) -->
+[Live Demo Link](https://covid-capstone.netlify.app/)
 
 <!-- ## Live Preview -->
 
