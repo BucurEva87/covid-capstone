@@ -58,10 +58,6 @@ Contributions, issues, and feature requests are welcome!
 
 Feel free to check the [issues page](../../issues/).
 
-## Aknowledgements
-
-Hats off to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio) for providing the design for this project!
-
 ## Show your support
 
 Give a ⭐️ if you like this project!
