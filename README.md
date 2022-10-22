@@ -19,9 +19,13 @@
 
 [Live Demo Link](https://covid-capstone.netlify.app/)
 
-<!-- ## Live Preview -->
+## Video Presentation
 
-<!-- ![Live Preview](https://i.postimg.cc/RhPr7nqj/Screenshot-from-2022-10-05-12-01-35.png) -->
+[Video Presentation](https://www.loom.com/share/0933d4604c8d420f9dc3e234e8b78cfd)
+
+## Live Preview
+
+![Live Preview](https://i.postimg.cc/k4z9PCc4/Screenshot-from-2022-10-23-00-53-22.png)
 
 
 ## Getting Started
