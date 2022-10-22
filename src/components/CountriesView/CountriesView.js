@@ -7,7 +7,7 @@ const CountriesView = () => {
   const countries = useSelector((state) => state.countries);
 
   return (
-    <section id={style.countries}>
+    <section id={style.countries} data-testid="countries-container">
       {
         countries.loading ? (
           <div className={style.loadingContainer}>
