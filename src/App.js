@@ -4,6 +4,8 @@ import {
   BrowserRouter as Router, Routes, Route, Navigate,
 } from 'react-router-dom';
 import CountriesView from './components/CountriesView/CountriesView';
+import Header from './components/Header/Header';
+import SelectedCountry from './components/SelectedCountry/SelectedCountry';
 import { fetchCountriesThunk } from './redux/countries/countries';
 
 const App = () => {
@@ -15,11 +17,16 @@ const App = () => {
 
   return (
     <Router>
+      <Header />
       <Routes>
         <Route
           path="/countries"
           index
           element={<CountriesView />}
+        />
+        <Route
+          path="/countries/:name"
+          element={<SelectedCountry />}
         />
         <Route
           path="/"
