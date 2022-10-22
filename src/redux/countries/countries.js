@@ -24,7 +24,15 @@ const countriesSlice = createSlice({
       const countries = {};
 
       Object.entries(action.payload).forEach(([key, value]) => {
-        if (value.All && value.All.country) countries[key] = value.All;
+        if (value.All && value.All.country) {
+          const {
+            confirmed, recovered, deaths,
+          } = value.All;
+
+          countries[key] = {
+            confirmed, recovered, deaths,
+          };
+        }
       });
 
       return {

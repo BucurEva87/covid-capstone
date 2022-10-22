@@ -1,28 +1,32 @@
 import { useEffect } from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import {
+  BrowserRouter as Router, Routes, Route, Navigate,
+} from 'react-router-dom';
+import CountriesView from './components/CountriesView/CountriesView';
 import { fetchCountriesThunk } from './redux/countries/countries';
 
 const App = () => {
   const dispatch = useDispatch();
-  const countries = useSelector((state) => state.countries);
 
   useEffect(() => {
     dispatch(fetchCountriesThunk());
   }, [dispatch]);
 
   return (
-    <div className="App">
-      {
-        countries.loading ? (
-          <div>
-            <p>Data is still loading...</p>
-            <img src={`${process.env.PUBLIC_URL}images/spinner.gif`} alt="Spinning loader" />
-          </div>
-        ) : (
-          <p>{ JSON.stringify(countries.list) }</p>
-        )
-      }
-    </div>
+    <Router>
+      <Routes>
+        <Route
+          path="/countries"
+          index
+          element={<CountriesView />}
+        />
+        <Route
+          path="/"
+          element={<Navigate to="/countries" />}
+        />
+      </Routes>
+    </Router>
   );
 };
 

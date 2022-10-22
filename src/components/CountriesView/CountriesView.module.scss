@@ -1,0 +1,13 @@
+#container {
+  background-color: pink;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  row-gap: 20px;
+  text-align: center;
+}
+
+article {
+  background-color: lightblue;
+  padding: 50px 0;
+}
