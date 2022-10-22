@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import style from './Header.module.scss';
 
 const Header = () => (
-  <header>
+  <header data-testid="header">
     <span className={style.back}><Link to="/">&laquo;</Link></span>
     <span>Statistics</span>
     <div>

@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`CountriesView component matches snapshot 1`] = `
+<section
+  data-testid="countries-container"
+  id="countries"
+>
+  <div
+    id="container"
+  />
+</section>
+`;
