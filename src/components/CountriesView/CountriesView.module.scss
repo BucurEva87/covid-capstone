@@ -1,0 +1,22 @@
+@import '../../styles/variables';
+
+#countries {
+  width: 100%;
+}
+
+#container {
+  background-color: $primaryColor;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: 100%;
+  text-align: center;
+}
+
+article:nth-child(even) {
+  background-color: $secondaryColor;
+}
+
+.loadingContainer {
+  width: 100%;
+  text-align: center;
+}
